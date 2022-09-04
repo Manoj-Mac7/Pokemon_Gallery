@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <script src="app.js" defer></script>
+
+
+</head>
+<body>
+    <nav>
+        <h1>Pokemon Gallery</h1>
+    </nav>
+    
+<div class="container">
+
+</div>
+<style>
+
+@font-face {
+    font-family: pokemon;
+    src: url(/fonts/Pokemon\ Hollow.ttf);
+}
+
+    *, :root{
+        --colordull : #E6CE2B;
+        --colorpink : #F099A8;
+    }
+    
+
+    body{
+        font-family: 'pokemon';
+        background-color: #FFF06A;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+        letter-spacing: 1.1em;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 1em;
+        padding: 10px;
+
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .flexview{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .2em;
+        padding: 1em;;
+        box-shadow: 0 0 10px 0 var(--colordull);
+        /* box-shadow: 4px 3px 7px 0 rgb(207, 197, 197); */
+        border-radius: 10px;
+        transition: all .4s;
+        border: .1px solid var(--colorpink);
+    }
+    .flexview:hover{
+        box-shadow: -5px 5px 16px 0 var(--colorpink);
+        cursor: pointer;
+        scale: 1.02;
+        translate: 5px -5px;
+    }
+</style>
+    
+</body>
+</html>
