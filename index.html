@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
     <script src="app.js" defer></script>
-
-
 </head>
 <body>
     <nav>
         <h1>Pokemon Gallery</h1>
     </nav>
-    
 <div class="container">
 
 </div>
@@ -24,11 +21,10 @@
     src: url(./fonts/Pokemon\ Hollow.ttf);
 }
 
-    *, :root{
+    * , :root{
         --colordull : #E6CE2B;
         --colorpink : #F099A8;
     }
-    
 
     body{
         font-family: 'pokemon';
@@ -36,6 +32,7 @@
     }
     nav{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         font-size: 1.4em;
@@ -50,6 +47,11 @@
         margin-top: 1em;
         padding: 10px;
 
+
+    }
+
+    span{
+        letter-spacing: .3em;
     }
 
     img{
